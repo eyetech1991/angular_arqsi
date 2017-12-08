@@ -1,0 +1,17 @@
+<table class="table table-striped ">
+  <thead class="bg-primary">
+    <tr>
+      <th class="text-center">Id</th>
+      <th class="text-center">Nome</th>
+      <th class="text-center">Concentrado</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let medicamento of medicamentos">
+    <tr>
+      <td>{{medicamento.id}}</td>
+      <td>{{medicamento.Nome}}</td>
+      <td>{{medicamento.Concentrado}}</td>
+    </tr>
+  </tbody>
+</table>
+</div>

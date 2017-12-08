@@ -1,0 +1,28 @@
+<div class="col-sm-3 sidebar-offcanvas" id="sidebar">
+  <div class="list-group">
+    <a class="list-group-item active">Lista de Ações nas API</a>
+    <a (click)="help()" class="list-group-item">
+      <i class="fa fa-bar-chart-o"></i> As minhas Receitas
+    </a>
+    <a (click)="help()" class="list-group-item">
+      <i class="fa fa-bar-chart-o"></i> Criar Receita
+    </a>
+    <a (click)="help()" class="list-group-item">
+      <i class="fa fa-comment-o"></i> Editar Receita
+    </a>
+    <a (click)="help()" class="list-group-item">
+      <i class="fa fa-comment-o"></i> Ver Receita
+      <span class="badge">100</span>
+    </a>
+    <a (click)="help()" class="list-group-item">
+      <i class="fa fa-comment-o"></i> Aviar Prescrição
+    </a>
+    <a (click)="help()" class="list-group-item">
+      <i class="fa fa-comment-o"></i> Ver posologia de receita
+    </a>
+  </div>
+</div>
+<div class="col-sm-9 table-responsive text-center modal-body">
+    <app-receitas-listar></app-receitas-listar>
+
+</div>

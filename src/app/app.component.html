@@ -1,0 +1,36 @@
+<!-- Navegação Nav bar superior -->
+<nav class="navbar navbar-default">
+	<div class="container-fluid">
+	
+		
+		<div class="navbar-header">
+			<a class="navbar-brand" href="" data-toggle="tooltip" title="Pagina Inicial">
+			 &nbsp; ARQSI ISEP</a>
+		</div>
+		
+		<ul class="nav navbar-nav">
+			<li>
+				<a href="#" routerLink="/medicamento">Medicamentos</a>
+			</li>
+		</ul>
+			
+		<ul class="nav navbar-nav">
+			<li>
+				<a *ngIf="userInfo" routerLink="/receita">&nbsp; Receita</a>
+			</li>
+		</ul>
+
+		<ul class="nav navbar-nav navbar-right">
+			<li>
+				<a *ngIf="!userInfo" routerLink="/register"><span class="glyphicon glyphicon-cloud"></span> &nbsp; Registrar</a>
+				<a *ngIf="userInfo"><span class="glyphicon glyphicon-user"></span>&nbsp;Welcome {{userInfo.user}}</a>
+			</li>
+			<li>
+				<a *ngIf="!userInfo" routerLink="/login"><span class="glyphicon glyphicon-cloud"></span> &nbsp; Login</a>
+				<a *ngIf="userInfo" routerLink="/login"><span class="glyphicon glyphicon-off"></span> &nbsp; Logout</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+<router-outlet></router-outlet>

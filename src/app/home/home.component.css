@@ -1,0 +1,19 @@
+
+
+
+.workBox{
+	border-style: solid;
+   	border-width: 0px 0px 5px 0px;
+	border-color: #ffffff;
+	transition: 1s ease;   
+}
+
+.workBox:hover{
+    -webkit-transform: rotateZ(-5deg);
+	-ms-transform: rotateZ(-5deg);
+	transform: rotateZ(10deg);
+	transition: 1s ease; 
+}
+
+
+
